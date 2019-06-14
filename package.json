@@ -1,0 +1,17 @@
+{
+  "name": "ns_image_builder",
+  "version": "1.0.0",
+  "description": "Native Script Image builder",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Daniel Rodríguez",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "image-size": "^0.7.4",
+    "resize-img": "^1.1.2"
+  }
+}
