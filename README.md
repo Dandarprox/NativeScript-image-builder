@@ -46,6 +46,7 @@ If you want to watch changes on the source folder to run the image builder
 ```
 gulp watch
 ``` 
+All images must be places in the *SOURCE FOLDER*, be sure to upload your highest resolution.
 
 If any image is removed from the source folder the associated images that were previously built will be removed from the android and ios folders.
 

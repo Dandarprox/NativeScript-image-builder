@@ -34,13 +34,29 @@ const androidDirectories = [
   'drawable-xxxhdpi'
 ];
 
+// Legacy sizes
+// const androidSizes = [
+//   1.50,
+//   0.75,
+//   1.00,
+//   2.00,
+//   3.00,
+//   4.00
+// ];
+
 const androidSizes = [
-  1.50,
+  0.38,
+  0.18,
+  0.25,
+  0.50,
   0.75,
-  1.00,
-  2.00,
-  3.00,
-  4.00
+  1.00
+];
+
+const iosSizes = [
+  0.33,
+  0.66,
+  1.00
 ];
 
 let namingRegex = new RegExp(/([a-z]*[\_])*[a-z]*/i);
@@ -93,8 +109,8 @@ function imageBuilder(done) {
         for (let j = 0; j < 3; ++j) {
           const buf = await resizeImg(fs.readFileSync(`${SRC_FOLDER}/${file}`),
             {
-              width: Math.round(currentWidth * (j + 1)),
-              height: Math.round(currentHeight * (j + 1))
+              width: Math.round(currentWidth * (iosSizes[j])),
+              height: Math.round(currentHeight * (iosSizes[j]))
             }
           );
 
