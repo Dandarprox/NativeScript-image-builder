@@ -12,6 +12,6 @@
   "dependencies": {
     "gulp": "^4.0.2",
     "image-size": "^0.7.4",
-    "resize-img": "^1.1.2"
+    "resize-img": "^2.0.0"
   }
 }
